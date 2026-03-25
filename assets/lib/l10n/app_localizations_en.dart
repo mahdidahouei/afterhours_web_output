@@ -830,4 +830,20 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get photo => 'Photo';
+
+  @override
+  String get savedSuccessfully => 'Saved successfully';
+
+  @override
+  String get storagePermissionRequired =>
+      'Storage permission is required in order to save file.';
+
+  @override
+  String get openIn => 'Open in';
+
+  @override
+  String get options => 'Options';
+
+  @override
+  String get save => 'Save';
 }

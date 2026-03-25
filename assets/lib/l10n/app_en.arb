@@ -322,5 +322,10 @@
   "bookATable": "Book a table",
   "aboutThisPlace": "About this place",
   "whereAreThey": "Where are they?",
-  "photo": "Photo"
+  "photo": "Photo",
+  "savedSuccessfully": "Saved successfully",
+  "storagePermissionRequired": "Storage permission is required in order to save file.",
+  "openIn": "Open in",
+  "options": "Options",
+  "save": "Save"
 }

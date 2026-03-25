@@ -1567,6 +1567,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Photo'**
   String get photo;
+
+  /// No description provided for @savedSuccessfully.
+  ///
+  /// In en, this message translates to:
+  /// **'Saved successfully'**
+  String get savedSuccessfully;
+
+  /// No description provided for @storagePermissionRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Storage permission is required in order to save file.'**
+  String get storagePermissionRequired;
+
+  /// No description provided for @openIn.
+  ///
+  /// In en, this message translates to:
+  /// **'Open in'**
+  String get openIn;
+
+  /// No description provided for @options.
+  ///
+  /// In en, this message translates to:
+  /// **'Options'**
+  String get options;
+
+  /// No description provided for @save.
+  ///
+  /// In en, this message translates to:
+  /// **'Save'**
+  String get save;
 }
 
 class _AppLocalizationsDelegate
