@@ -842,5 +842,11 @@ class AppLocalizationsNl extends AppLocalizations {
   String get options => 'Options';
 
   @override
+  String get bookAgain => 'Opnieuw reserveren';
+
+  @override
   String get save => 'Save';
+
+  @override
+  String get todaysTimeslots => 'Tijdsloten van vandaag';
 }

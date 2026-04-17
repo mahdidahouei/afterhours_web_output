@@ -323,5 +323,7 @@
   "bookATable": "Reserveer een tafel",
   "aboutThisPlace": "Over deze plek",
   "whereAreThey": "Waar zijn ze?",
-  "photo": "Foto"
+  "photo": "Foto",
+  "bookAgain": "Opnieuw reserveren",
+  "todaysTimeslots": "Tijdsloten van vandaag"
 }

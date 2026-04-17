@@ -22,9 +22,9 @@
           content="Use Afterhours to discover upscale dining locations, hotel restaurants, and gourmet delicacies in urban areas. Afterhours features an extensive selection of elite and full-service venues, all offering fluctuating rates on their complete menus, every hour of every day. There's no need to fuss about payments or particulars, as Afterhours is free 100% of charge. Just select your time and rate, book your desired time, and arrive at your table, everything else is taken care of.">
 
     <!-- iOS meta tags & icons -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="mobile">
+    <meta name="apple-mobile-web-app-title" content="Afterhours">
     <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
     <!-- Favicon -->
@@ -32,15 +32,6 @@
 
     <title>Afterhours</title>
     <link rel="manifest" href="manifest.json">
-
-    <script>
-        // The value below is injected by flutter build, do not touch.
-        const serviceWorkerVersion = "4717387" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */;
-
-
-    </script>
-    <!-- This script adds the flutter initialization JS code -->
-    <script src="flutter.js" defer></script>
 
     <style>
         html, body {
@@ -60,7 +51,7 @@
         }
 
         .center {
-            width: 139px; /* adjust size as needed */
+            width: 139px;
             height: auto;
         }
     </style>
@@ -70,22 +61,7 @@
 <div id="div-wait">
     <img src="icons/splash_icon.png" class="center"/>
 </div>
-<script>
-    window.addEventListener('load', function (ev) {
-        // Download main.dart.js
-        _flutter.loader.loadEntrypoint({
-            serviceWorker: {
-                serviceWorkerVersion: serviceWorkerVersion,
-            },
-            onEntrypointLoaded: function (engineInitializer) {
-                engineInitializer.initializeEngine().then(function (appRunner) {
-                    appRunner.runApp();
-                });
-            }
-        });
-    });
 
-
-</script>
+<script src="flutter_bootstrap.js" async></script>
 </body>
 </html>

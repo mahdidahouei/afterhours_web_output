@@ -1592,11 +1592,23 @@ abstract class AppLocalizations {
   /// **'Options'**
   String get options;
 
+  /// No description provided for @bookAgain.
+  ///
+  /// In en, this message translates to:
+  /// **'Book again'**
+  String get bookAgain;
+
   /// No description provided for @save.
   ///
   /// In en, this message translates to:
   /// **'Save'**
   String get save;
+
+  /// No description provided for @todaysTimeslots.
+  ///
+  /// In en, this message translates to:
+  /// **'Today\'s time-slots'**
+  String get todaysTimeslots;
 }
 
 class _AppLocalizationsDelegate

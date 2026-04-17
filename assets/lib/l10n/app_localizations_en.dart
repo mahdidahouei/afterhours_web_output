@@ -845,5 +845,11 @@ class AppLocalizationsEn extends AppLocalizations {
   String get options => 'Options';
 
   @override
+  String get bookAgain => 'Book again';
+
+  @override
   String get save => 'Save';
+
+  @override
+  String get todaysTimeslots => 'Today\'s time-slots';
 }

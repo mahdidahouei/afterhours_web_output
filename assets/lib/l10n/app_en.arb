@@ -327,5 +327,7 @@
   "storagePermissionRequired": "Storage permission is required in order to save file.",
   "openIn": "Open in",
   "options": "Options",
-  "save": "Save"
+  "bookAgain": "Book again",
+  "save": "Save",
+  "todaysTimeslots": "Today's time-slots"
 }
