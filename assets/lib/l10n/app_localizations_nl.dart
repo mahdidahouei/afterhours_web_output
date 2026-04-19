@@ -848,5 +848,6 @@ class AppLocalizationsNl extends AppLocalizations {
   String get save => 'Save';
 
   @override
-  String get todaysTimeslots => 'Tijdsloten van vandaag';
+  String get enterValidInformation =>
+      'Voer geldige gegevens in alle velden in.';
 }

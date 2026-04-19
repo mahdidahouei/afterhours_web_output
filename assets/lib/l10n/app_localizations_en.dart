@@ -851,5 +851,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get save => 'Save';
 
   @override
-  String get todaysTimeslots => 'Today\'s time-slots';
+  String get enterValidInformation =>
+      'Please enter valid information in all fields.';
 }

@@ -1604,11 +1604,11 @@ abstract class AppLocalizations {
   /// **'Save'**
   String get save;
 
-  /// No description provided for @todaysTimeslots.
+  /// No description provided for @enterValidInformation.
   ///
   /// In en, this message translates to:
-  /// **'Today\'s time-slots'**
-  String get todaysTimeslots;
+  /// **'Please enter valid information in all fields.'**
+  String get enterValidInformation;
 }
 
 class _AppLocalizationsDelegate
