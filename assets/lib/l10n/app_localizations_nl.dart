@@ -31,7 +31,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get signInIfAlreadyAUser => 'Al een gebruiker? Inloggen';
 
   @override
-  String get alreadyHaveAccount => 'Heb je al een account?';
+  String get alreadyAMember => 'Heb je al een account?';
 
   @override
   String get emailEmptyError => 'Voer je e-mailadres in.';
@@ -46,7 +46,10 @@ class AppLocalizationsNl extends AppLocalizations {
   String get mobileInvalidError => 'Voer een geldig mobiel nummer in.';
 
   @override
-  String get signUpTitle => 'Log in om verder te gaan';
+  String get signUpTitle => 'We hebben wat info nodig';
+
+  @override
+  String get signUpSubtitle => 'Voer hieronder je telefoonnummer in.';
 
   @override
   String get phoneNumber => 'Telefoonnummer';
@@ -71,6 +74,13 @@ class AppLocalizationsNl extends AppLocalizations {
   String get networkError => 'Controleer je netwerkverbinding.';
 
   @override
+  String get youAreOffline => 'Je bent offline';
+
+  @override
+  String get networkErrorDescription =>
+      'Het lijkt erop dat je geen internetverbinding hebt. Controleer je verbinding en probeer het opnieuw.';
+
+  @override
   String get unauthorizedError => 'Je bent uitgelogd. Log opnieuw in.';
 
   @override
@@ -81,16 +91,17 @@ class AppLocalizationsNl extends AppLocalizations {
   String get unknownError => 'Er is iets misgegaan.';
 
   @override
-  String get selectCountry => 'Selecteer je land';
-
-  @override
   String get searchCountries => 'Zoek op landnaam of code';
 
   @override
   String get noClipBoardData => 'Je klembord is leeg';
 
   @override
-  String get otpTitle => 'Verifieer je telefoonnummer';
+  String get otpTitle => 'Bevestig je telefoonnummer';
+
+  @override
+  String get otpSubtitle =>
+      'Voer de 5-cijferige code in die we je net hebben gestuurd.';
 
   @override
   String get invalidOtp => 'Deze code klopt niet. Probeer het opnieuw.';
@@ -108,7 +119,25 @@ class AppLocalizationsNl extends AppLocalizations {
   String get resendCode => 'Nieuwe code sturen';
 
   @override
-  String get profileSetupTitle => 'Vul je basisgegevens in';
+  String get profileSetupTitle => 'Welkom bij Afterhours.';
+
+  @override
+  String get profileSetupSubtitle => 'Laten we je gegevens afronden.';
+
+  @override
+  String get startBrowsing => 'Begin met verkennen';
+
+  @override
+  String get selectYourCountry => 'Selecteer je land';
+
+  @override
+  String get searchCountryHint => 'Zoek op landnaam of code';
+
+  @override
+  String get selectCountry => 'Selecteer je land';
+
+  @override
+  String get becomeAMember => 'Word lid';
 
   @override
   String get fullName => 'Volledige naam';
@@ -145,6 +174,12 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get reset => 'Terugzetten';
+
+  @override
+  String get showResults => 'Resultaten tonen';
+
+  @override
+  String get clearAll => 'Alles wissen';
 
   @override
   String get showMore => 'Meer weergeven';
@@ -252,19 +287,25 @@ class AppLocalizationsNl extends AppLocalizations {
   String get close => 'Sluiten';
 
   @override
+  String get comments => 'Reacties';
+
+  @override
   String get theWordNew => 'Nieuw';
 
   @override
   String get account => 'Account';
 
   @override
-  String get accountSettings => 'Accountinstellingen';
-
-  @override
-  String get editAccount => 'Account bewerken';
-
-  @override
   String get signOut => 'Uitloggen';
+
+  @override
+  String get accountDetails => 'Accountgegevens';
+
+  @override
+  String get deleteAccount => 'Account verwijderen';
+
+  @override
+  String get emailAddress => 'E-mailadres';
 
   @override
   String get signOutDescription => 'Weet je zeker dat je wil uitloggen?';
@@ -280,6 +321,20 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get responseTime => 'Je hoort meestal binnen 24 uur van ons';
+
+  @override
+  String get supportInquiriesIntro =>
+      'Voor overige vragen kun je ons mailen op';
+
+  @override
+  String get supportResponse48h => 'We reageren binnen 48 uur.';
+
+  @override
+  String get supportReservationLead =>
+      'Heb je problemen met een reservering, neem dan rechtstreeks contact op met het ';
+
+  @override
+  String get supportRestaurantDirectly => 'restaurant';
 
   @override
   String get emailUs => 'Mail ons';
@@ -335,6 +390,12 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get appSetting => 'App-instelling';
+
+  @override
+  String get forRestaurants => 'Voor restaurants';
+
+  @override
+  String get applyForPartnership => 'Vraag partnerschap aan';
 
   @override
   String get appTheme => 'App-thema';
@@ -398,6 +459,17 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get menu => 'Menu';
+
+  @override
+  String nLanguageVariants(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count taalvarianten',
+      one: '1 taalvariant',
+    );
+    return '$_temp0';
+  }
 
   @override
   String nReviews(num count) {
@@ -555,6 +627,18 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
+  String nRestaurantsFound(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count restaurants gevonden',
+      one: '1 restaurant gevonden',
+      zero: 'Geen restaurants gevonden',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String nGuests(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -662,6 +746,58 @@ class AppLocalizationsNl extends AppLocalizations {
       'Hier komen je eerdere reserveringen te staan.';
 
   @override
+  String get noFavoriteRestaurants =>
+      'Je hebt nog geen favoriete\nrestaurants opgeslagen.';
+
+  @override
+  String get exploreRestaurants => 'Ontdek restaurants';
+
+  @override
+  String get noSavedRestaurants => 'Geen opgeslagen restaurants';
+
+  @override
+  String get noSavedRestaurantsDescription =>
+      'Je ziet je opgeslagen restaurants in dit tabblad zodra je op het hartje op een restaurantprofiel tikt';
+
+  @override
+  String get browseRestaurants => 'Ontdek restaurants';
+
+  @override
+  String get updateAvailable => 'Update beschikbaar';
+
+  @override
+  String get updateRequired => 'Update vereist';
+
+  @override
+  String get updateYourApp => 'Werk je app bij.';
+
+  @override
+  String get updateMyApp => 'App bijwerken';
+
+  @override
+  String get optionalUpdateMessage =>
+      'Er is nu een nieuwe versie van Afterhours beschikbaar, werk je app bij.';
+
+  @override
+  String get mandatoryUpdateMessage =>
+      'Deze versie van de app werkt niet meer. Werk eerst je app bij.';
+
+  @override
+  String get whatsNew => 'Wat is er nieuw';
+
+  @override
+  String get updateNow => 'Nu bijwerken';
+
+  @override
+  String get updateLater => 'Later';
+
+  @override
+  String get closeApp => 'App sluiten';
+
+  @override
+  String get welcomeToAfterhours => 'Welkom bij Afterhours.';
+
+  @override
   String get signedOut => 'Je bent uitgelogd.';
 
   @override
@@ -693,7 +829,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get canceled => 'Geannuleerd';
 
   @override
-  String get noShow => 'Je bent niet naar deze reservering gegaan';
+  String get noShow => 'Niet verschenen';
 
   @override
   String get time => 'Tijd';
@@ -743,6 +879,17 @@ class AppLocalizationsNl extends AppLocalizations {
   String get results => 'Resultaten';
 
   @override
+  String resultsFound(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count resultaten gevonden',
+      one: '1 resultaat gevonden',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get searching => 'Aan het zoeken';
 
   @override
@@ -753,6 +900,9 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get mapView => 'Kaartweergave';
+
+  @override
+  String get map => 'Kaart';
 
   @override
   String get accessDenied => 'Toegang geweigerd';
@@ -826,6 +976,12 @@ class AppLocalizationsNl extends AppLocalizations {
   String get whereAreThey => 'Waar zijn ze?';
 
   @override
+  String get gettingThere => 'Hoe je er komt';
+
+  @override
+  String get viewRestaurantProfile => 'Bekijk restaurantprofiel';
+
+  @override
   String get photo => 'Foto';
 
   @override
@@ -850,4 +1006,37 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get enterValidInformation =>
       'Voer geldige gegevens in alle velden in.';
+
+  @override
+  String get confirmCancellation => 'Annulering bevestigen';
+
+  @override
+  String get cancelBookingDescription =>
+      'Weet je zeker dat je deze reservering wilt annuleren?';
+
+  @override
+  String get yesCancel => 'Ja, annuleren';
+
+  @override
+  String get cancellationSuccessful => 'Reservering geannuleerd';
+
+  @override
+  String get cancellationSuccessfulDescription =>
+      'Je reservering is succesvol geannuleerd.';
+
+  @override
+  String get errorCancelingBooking =>
+      'Annuleren van reservering is mislukt. Probeer het opnieuw.';
+
+  @override
+  String get confirm => 'Bevestigen';
+
+  @override
+  String get support => 'Ondersteuning';
+
+  @override
+  String get about => 'Over';
+
+  @override
+  String get done => 'Klaar';
 }

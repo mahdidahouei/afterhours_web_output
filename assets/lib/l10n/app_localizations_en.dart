@@ -31,7 +31,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get signInIfAlreadyAUser => 'Already a user? sign in';
 
   @override
-  String get alreadyHaveAccount => 'Already have an account?';
+  String get alreadyAMember => 'Already a member?';
 
   @override
   String get emailEmptyError => 'Please enter your email.';
@@ -46,7 +46,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get mobileInvalidError => 'Enter a valid mobile number.';
 
   @override
-  String get signUpTitle => 'Sign in to continue';
+  String get signUpTitle => 'We need some info';
+
+  @override
+  String get signUpSubtitle => 'Enter your phone number below.';
 
   @override
   String get phoneNumber => 'Phone number';
@@ -71,6 +74,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get networkError => 'Please check your network connection.';
 
   @override
+  String get youAreOffline => 'You are offline';
+
+  @override
+  String get networkErrorDescription =>
+      'It looks like you are not connected to the internet, please check your connection and try again.';
+
+  @override
   String get unauthorizedError => 'Your are logged out. Please log in again.';
 
   @override
@@ -80,16 +90,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get unknownError => 'Something went wrong.';
 
   @override
-  String get selectCountry => 'Select you country';
-
-  @override
   String get searchCountries => 'Search for country name or code';
 
   @override
   String get noClipBoardData => 'Your clipboard is empty';
 
   @override
-  String get otpTitle => 'Verify your phone number';
+  String get otpTitle => 'Confirm your phone number';
+
+  @override
+  String get otpSubtitle => 'Enter the 5 digit code we just sent you.';
 
   @override
   String get invalidOtp => 'Your code is incorrect, please try again.';
@@ -107,7 +117,25 @@ class AppLocalizationsEn extends AppLocalizations {
   String get resendCode => 'send a new code';
 
   @override
-  String get profileSetupTitle => 'Add your basic details';
+  String get profileSetupTitle => 'Welcome to Afterhours.';
+
+  @override
+  String get profileSetupSubtitle => 'Let\'s finalize your details.';
+
+  @override
+  String get startBrowsing => 'Start browsing';
+
+  @override
+  String get selectYourCountry => 'Select your country';
+
+  @override
+  String get searchCountryHint => 'Search for country name or code';
+
+  @override
+  String get selectCountry => 'Select country';
+
+  @override
+  String get becomeAMember => 'Become a member';
 
   @override
   String get fullName => 'Full name';
@@ -144,6 +172,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get reset => 'Reset';
+
+  @override
+  String get showResults => 'Show results';
+
+  @override
+  String get clearAll => 'Clear all';
 
   @override
   String get showMore => 'Show more';
@@ -251,19 +285,25 @@ class AppLocalizationsEn extends AppLocalizations {
   String get close => 'Close';
 
   @override
+  String get comments => 'Comments';
+
+  @override
   String get theWordNew => 'New';
 
   @override
   String get account => 'Account';
 
   @override
-  String get accountSettings => 'Account settings';
-
-  @override
-  String get editAccount => 'Edit account';
-
-  @override
   String get signOut => 'Sign out';
+
+  @override
+  String get accountDetails => 'Account details';
+
+  @override
+  String get deleteAccount => 'Delete account';
+
+  @override
+  String get emailAddress => 'Email address';
 
   @override
   String get signOutDescription =>
@@ -281,6 +321,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get responseTime => 'We typically answer within 24 hours';
+
+  @override
+  String get supportInquiriesIntro => 'For other inquiries please write to';
+
+  @override
+  String get supportResponse48h => 'We will get back to you within 48 hours.';
+
+  @override
+  String get supportReservationLead =>
+      'If you are having trouble with a reservation please contact your ';
+
+  @override
+  String get supportRestaurantDirectly => 'restaurant directly';
 
   @override
   String get emailUs => 'Email us';
@@ -339,6 +392,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get appSetting => 'App setting';
 
   @override
+  String get forRestaurants => 'For Restaurants';
+
+  @override
+  String get applyForPartnership => 'Apply for Partnership';
+
+  @override
   String get appTheme => 'App theme';
 
   @override
@@ -363,7 +422,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get aboutAfterhours => 'About Afterhours';
 
   @override
-  String get termsAndConditions => 'Terms and conditions';
+  String get termsAndConditions => 'Terms & Conditions';
 
   @override
   String get light => 'Light';
@@ -400,6 +459,17 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get menu => 'Menu';
+
+  @override
+  String nLanguageVariants(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count language variants',
+      one: '1 language variant',
+    );
+    return '$_temp0';
+  }
 
   @override
   String nReviews(num count) {
@@ -557,6 +627,18 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String nRestaurantsFound(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count restaurants found',
+      one: '1 restaurant found',
+      zero: 'No restaurants found',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String nGuests(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -664,6 +746,58 @@ class AppLocalizationsEn extends AppLocalizations {
   String get noHistoryBookings => 'Your booking history will\nappear here.';
 
   @override
+  String get noFavoriteRestaurants =>
+      'You haven\'t saved any\nfavorite restaurants yet.';
+
+  @override
+  String get exploreRestaurants => 'Explore restaurants';
+
+  @override
+  String get noSavedRestaurants => 'No Saved Restaurants';
+
+  @override
+  String get noSavedRestaurantsDescription =>
+      'You can view your saved restaurant in this tab once you click the heart button on a restaurant profile';
+
+  @override
+  String get browseRestaurants => 'Browse restaurants';
+
+  @override
+  String get updateAvailable => 'Update available';
+
+  @override
+  String get updateRequired => 'Update required';
+
+  @override
+  String get updateYourApp => 'Update your app.';
+
+  @override
+  String get updateMyApp => 'Update my app';
+
+  @override
+  String get optionalUpdateMessage =>
+      'A new version of Afterhours is available now, please update your app.';
+
+  @override
+  String get mandatoryUpdateMessage =>
+      'This version of the application is no longer working. Please update your app first.';
+
+  @override
+  String get whatsNew => 'What\'s new';
+
+  @override
+  String get updateNow => 'Update now';
+
+  @override
+  String get updateLater => 'Later';
+
+  @override
+  String get closeApp => 'Close app';
+
+  @override
+  String get welcomeToAfterhours => 'Welcome to Afterhours.';
+
+  @override
   String get signedOut => 'You are signed out.';
 
   @override
@@ -696,7 +830,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get canceled => 'Cancelled';
 
   @override
-  String get noShow => 'You did not go to this booking';
+  String get noShow => 'No show';
 
   @override
   String get time => 'Time';
@@ -746,6 +880,17 @@ class AppLocalizationsEn extends AppLocalizations {
   String get results => 'Results';
 
   @override
+  String resultsFound(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count results found',
+      one: '1 result found',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get searching => 'Searching';
 
   @override
@@ -756,6 +901,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get mapView => 'Map view';
+
+  @override
+  String get map => 'Map';
 
   @override
   String get accessDenied => 'Access denied';
@@ -791,7 +939,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get allPlacesConsideredDescription =>
-      'We have collected every spot in the city and\nupdate our directory every month with new spots.';
+      'We have collected every spot in the city and\nupdate our directory monthly with new spots.';
 
   @override
   String get letsFindPerfectFit => 'Let’s find a perfect fit';
@@ -829,6 +977,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get whereAreThey => 'Where are they?';
 
   @override
+  String get gettingThere => 'Getting There';
+
+  @override
+  String get viewRestaurantProfile => 'View restaurant profile';
+
+  @override
   String get photo => 'Photo';
 
   @override
@@ -853,4 +1007,37 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get enterValidInformation =>
       'Please enter valid information in all fields.';
+
+  @override
+  String get confirmCancellation => 'Confirm cancellation';
+
+  @override
+  String get cancelBookingDescription =>
+      'Are you sure you want to cancel this booking?';
+
+  @override
+  String get yesCancel => 'Yes, cancel';
+
+  @override
+  String get cancellationSuccessful => 'Booking canceled';
+
+  @override
+  String get cancellationSuccessfulDescription =>
+      'Your booking has been successfully canceled.';
+
+  @override
+  String get errorCancelingBooking =>
+      'Failed to cancel booking. Please try again.';
+
+  @override
+  String get confirm => 'Confirm';
+
+  @override
+  String get support => 'Support';
+
+  @override
+  String get about => 'About';
+
+  @override
+  String get done => 'Done';
 }

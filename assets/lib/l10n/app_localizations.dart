@@ -140,11 +140,11 @@ abstract class AppLocalizations {
   /// **'Already a user? sign in'**
   String get signInIfAlreadyAUser;
 
-  /// No description provided for @alreadyHaveAccount.
+  /// No description provided for @alreadyAMember.
   ///
   /// In en, this message translates to:
-  /// **'Already have an account?'**
-  String get alreadyHaveAccount;
+  /// **'Already a member?'**
+  String get alreadyAMember;
 
   /// No description provided for @emailEmptyError.
   ///
@@ -173,8 +173,14 @@ abstract class AppLocalizations {
   /// No description provided for @signUpTitle.
   ///
   /// In en, this message translates to:
-  /// **'Sign in to continue'**
+  /// **'We need some info'**
   String get signUpTitle;
+
+  /// No description provided for @signUpSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your phone number below.'**
+  String get signUpSubtitle;
 
   /// No description provided for @phoneNumber.
   ///
@@ -218,6 +224,18 @@ abstract class AppLocalizations {
   /// **'Please check your network connection.'**
   String get networkError;
 
+  /// No description provided for @youAreOffline.
+  ///
+  /// In en, this message translates to:
+  /// **'You are offline'**
+  String get youAreOffline;
+
+  /// No description provided for @networkErrorDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'It looks like you are not connected to the internet, please check your connection and try again.'**
+  String get networkErrorDescription;
+
   /// No description provided for @unauthorizedError.
   ///
   /// In en, this message translates to:
@@ -236,12 +254,6 @@ abstract class AppLocalizations {
   /// **'Something went wrong.'**
   String get unknownError;
 
-  /// No description provided for @selectCountry.
-  ///
-  /// In en, this message translates to:
-  /// **'Select you country'**
-  String get selectCountry;
-
   /// No description provided for @searchCountries.
   ///
   /// In en, this message translates to:
@@ -257,8 +269,14 @@ abstract class AppLocalizations {
   /// No description provided for @otpTitle.
   ///
   /// In en, this message translates to:
-  /// **'Verify your phone number'**
+  /// **'Confirm your phone number'**
   String get otpTitle;
+
+  /// No description provided for @otpSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter the 5 digit code we just sent you.'**
+  String get otpSubtitle;
 
   /// No description provided for @invalidOtp.
   ///
@@ -293,8 +311,44 @@ abstract class AppLocalizations {
   /// No description provided for @profileSetupTitle.
   ///
   /// In en, this message translates to:
-  /// **'Add your basic details'**
+  /// **'Welcome to Afterhours.'**
   String get profileSetupTitle;
+
+  /// No description provided for @profileSetupSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Let\'s finalize your details.'**
+  String get profileSetupSubtitle;
+
+  /// No description provided for @startBrowsing.
+  ///
+  /// In en, this message translates to:
+  /// **'Start browsing'**
+  String get startBrowsing;
+
+  /// No description provided for @selectYourCountry.
+  ///
+  /// In en, this message translates to:
+  /// **'Select your country'**
+  String get selectYourCountry;
+
+  /// No description provided for @searchCountryHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search for country name or code'**
+  String get searchCountryHint;
+
+  /// No description provided for @selectCountry.
+  ///
+  /// In en, this message translates to:
+  /// **'Select country'**
+  String get selectCountry;
+
+  /// No description provided for @becomeAMember.
+  ///
+  /// In en, this message translates to:
+  /// **'Become a member'**
+  String get becomeAMember;
 
   /// No description provided for @fullName.
   ///
@@ -367,6 +421,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Reset'**
   String get reset;
+
+  /// No description provided for @showResults.
+  ///
+  /// In en, this message translates to:
+  /// **'Show results'**
+  String get showResults;
+
+  /// No description provided for @clearAll.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear all'**
+  String get clearAll;
 
   /// No description provided for @showMore.
   ///
@@ -572,6 +638,12 @@ abstract class AppLocalizations {
   /// **'Close'**
   String get close;
 
+  /// No description provided for @comments.
+  ///
+  /// In en, this message translates to:
+  /// **'Comments'**
+  String get comments;
+
   /// No description provided for @theWordNew.
   ///
   /// In en, this message translates to:
@@ -584,23 +656,29 @@ abstract class AppLocalizations {
   /// **'Account'**
   String get account;
 
-  /// No description provided for @accountSettings.
-  ///
-  /// In en, this message translates to:
-  /// **'Account settings'**
-  String get accountSettings;
-
-  /// No description provided for @editAccount.
-  ///
-  /// In en, this message translates to:
-  /// **'Edit account'**
-  String get editAccount;
-
   /// No description provided for @signOut.
   ///
   /// In en, this message translates to:
   /// **'Sign out'**
   String get signOut;
+
+  /// No description provided for @accountDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'Account details'**
+  String get accountDetails;
+
+  /// No description provided for @deleteAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete account'**
+  String get deleteAccount;
+
+  /// No description provided for @emailAddress.
+  ///
+  /// In en, this message translates to:
+  /// **'Email address'**
+  String get emailAddress;
 
   /// No description provided for @signOutDescription.
   ///
@@ -631,6 +709,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'We typically answer within 24 hours'**
   String get responseTime;
+
+  /// No description provided for @supportInquiriesIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'For other inquiries please write to'**
+  String get supportInquiriesIntro;
+
+  /// No description provided for @supportResponse48h.
+  ///
+  /// In en, this message translates to:
+  /// **'We will get back to you within 48 hours.'**
+  String get supportResponse48h;
+
+  /// No description provided for @supportReservationLead.
+  ///
+  /// In en, this message translates to:
+  /// **'If you are having trouble with a reservation please contact your '**
+  String get supportReservationLead;
+
+  /// No description provided for @supportRestaurantDirectly.
+  ///
+  /// In en, this message translates to:
+  /// **'restaurant directly'**
+  String get supportRestaurantDirectly;
 
   /// No description provided for @emailUs.
   ///
@@ -740,6 +842,18 @@ abstract class AppLocalizations {
   /// **'App setting'**
   String get appSetting;
 
+  /// No description provided for @forRestaurants.
+  ///
+  /// In en, this message translates to:
+  /// **'For Restaurants'**
+  String get forRestaurants;
+
+  /// No description provided for @applyForPartnership.
+  ///
+  /// In en, this message translates to:
+  /// **'Apply for Partnership'**
+  String get applyForPartnership;
+
   /// No description provided for @appTheme.
   ///
   /// In en, this message translates to:
@@ -791,7 +905,7 @@ abstract class AppLocalizations {
   /// No description provided for @termsAndConditions.
   ///
   /// In en, this message translates to:
-  /// **'Terms and conditions'**
+  /// **'Terms & Conditions'**
   String get termsAndConditions;
 
   /// No description provided for @light.
@@ -865,6 +979,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Menu'**
   String get menu;
+
+  /// No description provided for @nLanguageVariants.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 language variant} other{{count} language variants}}'**
+  String nLanguageVariants(int count);
 
   /// A plural message
   ///
@@ -1124,6 +1244,12 @@ abstract class AppLocalizations {
   /// **'{count, plural, =0{No people} =1{1 person} other{{count} people}}'**
   String nPeople(int count);
 
+  /// Total restaurants matching the current map query
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{No restaurants found} =1{1 restaurant found} other{{count} restaurants found}}'**
+  String nRestaurantsFound(int count);
+
   /// Number of guests
   ///
   /// In en, this message translates to:
@@ -1250,6 +1376,102 @@ abstract class AppLocalizations {
   /// **'Your booking history will\nappear here.'**
   String get noHistoryBookings;
 
+  /// No description provided for @noFavoriteRestaurants.
+  ///
+  /// In en, this message translates to:
+  /// **'You haven\'t saved any\nfavorite restaurants yet.'**
+  String get noFavoriteRestaurants;
+
+  /// No description provided for @exploreRestaurants.
+  ///
+  /// In en, this message translates to:
+  /// **'Explore restaurants'**
+  String get exploreRestaurants;
+
+  /// No description provided for @noSavedRestaurants.
+  ///
+  /// In en, this message translates to:
+  /// **'No Saved Restaurants'**
+  String get noSavedRestaurants;
+
+  /// No description provided for @noSavedRestaurantsDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'You can view your saved restaurant in this tab once you click the heart button on a restaurant profile'**
+  String get noSavedRestaurantsDescription;
+
+  /// No description provided for @browseRestaurants.
+  ///
+  /// In en, this message translates to:
+  /// **'Browse restaurants'**
+  String get browseRestaurants;
+
+  /// No description provided for @updateAvailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Update available'**
+  String get updateAvailable;
+
+  /// No description provided for @updateRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Update required'**
+  String get updateRequired;
+
+  /// No description provided for @updateYourApp.
+  ///
+  /// In en, this message translates to:
+  /// **'Update your app.'**
+  String get updateYourApp;
+
+  /// No description provided for @updateMyApp.
+  ///
+  /// In en, this message translates to:
+  /// **'Update my app'**
+  String get updateMyApp;
+
+  /// No description provided for @optionalUpdateMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'A new version of Afterhours is available now, please update your app.'**
+  String get optionalUpdateMessage;
+
+  /// No description provided for @mandatoryUpdateMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'This version of the application is no longer working. Please update your app first.'**
+  String get mandatoryUpdateMessage;
+
+  /// No description provided for @whatsNew.
+  ///
+  /// In en, this message translates to:
+  /// **'What\'s new'**
+  String get whatsNew;
+
+  /// No description provided for @updateNow.
+  ///
+  /// In en, this message translates to:
+  /// **'Update now'**
+  String get updateNow;
+
+  /// No description provided for @updateLater.
+  ///
+  /// In en, this message translates to:
+  /// **'Later'**
+  String get updateLater;
+
+  /// No description provided for @closeApp.
+  ///
+  /// In en, this message translates to:
+  /// **'Close app'**
+  String get closeApp;
+
+  /// No description provided for @welcomeToAfterhours.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome to Afterhours.'**
+  String get welcomeToAfterhours;
+
   /// No description provided for @signedOut.
   ///
   /// In en, this message translates to:
@@ -1313,7 +1535,7 @@ abstract class AppLocalizations {
   /// No description provided for @noShow.
   ///
   /// In en, this message translates to:
-  /// **'You did not go to this booking'**
+  /// **'No show'**
   String get noShow;
 
   /// No description provided for @time.
@@ -1406,6 +1628,12 @@ abstract class AppLocalizations {
   /// **'Results'**
   String get results;
 
+  /// No description provided for @resultsFound.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 result found} other{{count} results found}}'**
+  String resultsFound(int count);
+
   /// No description provided for @searching.
   ///
   /// In en, this message translates to:
@@ -1429,6 +1657,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Map view'**
   String get mapView;
+
+  /// No description provided for @map.
+  ///
+  /// In en, this message translates to:
+  /// **'Map'**
+  String get map;
 
   /// No description provided for @accessDenied.
   ///
@@ -1493,7 +1727,7 @@ abstract class AppLocalizations {
   /// No description provided for @allPlacesConsideredDescription.
   ///
   /// In en, this message translates to:
-  /// **'We have collected every spot in the city and\nupdate our directory every month with new spots.'**
+  /// **'We have collected every spot in the city and\nupdate our directory monthly with new spots.'**
   String get allPlacesConsideredDescription;
 
   /// No description provided for @letsFindPerfectFit.
@@ -1562,6 +1796,18 @@ abstract class AppLocalizations {
   /// **'Where are they?'**
   String get whereAreThey;
 
+  /// No description provided for @gettingThere.
+  ///
+  /// In en, this message translates to:
+  /// **'Getting There'**
+  String get gettingThere;
+
+  /// No description provided for @viewRestaurantProfile.
+  ///
+  /// In en, this message translates to:
+  /// **'View restaurant profile'**
+  String get viewRestaurantProfile;
+
   /// No description provided for @photo.
   ///
   /// In en, this message translates to:
@@ -1609,6 +1855,66 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Please enter valid information in all fields.'**
   String get enterValidInformation;
+
+  /// No description provided for @confirmCancellation.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm cancellation'**
+  String get confirmCancellation;
+
+  /// No description provided for @cancelBookingDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to cancel this booking?'**
+  String get cancelBookingDescription;
+
+  /// No description provided for @yesCancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Yes, cancel'**
+  String get yesCancel;
+
+  /// No description provided for @cancellationSuccessful.
+  ///
+  /// In en, this message translates to:
+  /// **'Booking canceled'**
+  String get cancellationSuccessful;
+
+  /// No description provided for @cancellationSuccessfulDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Your booking has been successfully canceled.'**
+  String get cancellationSuccessfulDescription;
+
+  /// No description provided for @errorCancelingBooking.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to cancel booking. Please try again.'**
+  String get errorCancelingBooking;
+
+  /// No description provided for @confirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm'**
+  String get confirm;
+
+  /// No description provided for @support.
+  ///
+  /// In en, this message translates to:
+  /// **'Support'**
+  String get support;
+
+  /// No description provided for @about.
+  ///
+  /// In en, this message translates to:
+  /// **'About'**
+  String get about;
+
+  /// No description provided for @done.
+  ///
+  /// In en, this message translates to:
+  /// **'Done'**
+  String get done;
 }
 
 class _AppLocalizationsDelegate
